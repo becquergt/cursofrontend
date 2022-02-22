@@ -25,6 +25,7 @@ body{
     height: 80px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .header__img{
     width: 150px;
