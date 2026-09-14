@@ -26,17 +26,17 @@
                 </ul>
         </div>
     </header>
-    <section class="login">
+    <main class="login">
         <div class="login__conteiner">
             <div class="login__title"><h2>Inicia sesion</h2></div>
             <div class="login__conteiner--form">
-                <form>
-                <input type="text" placeholder="Correo">
-                <input type="text" placeholder="contrasena">
+                <form id="loginForm">
+                <input type="email" id="email" placeholder="Correo" required>
+                <input type="password" id="password" placeholder="contrasena" required>
                 </form>
             </div>
             <div class="login__button">
-                <button>Iniciar sesion</button>
+                <button form="loginForm">Iniciar sesion</button>
             </div>
             
             <div class="login__container--remember">
@@ -45,16 +45,16 @@
                     </label>
                     <a href="">Olvide mi contrasena</a>
             </div>
-            <div class="login__container--social">
+            <nav class="login__container--social">
                     <div><img src="./img/iconogo.png" alt=""><a href="./"> sesion con google</a></div>
                     <div><img src="./img/twiter.png" alt=""><a href="./">Inicia sesion con twiter</a></div>
-            </div>
+            </nav>
             <div class="login__registrate">
                 <p>No tienes ninguna cuenta <a href="./"><strong>Registrate</strong></a></p>
             </div>
         </div>
     
-    </section>
+    </main>
 <footer class="footer"> 
  <a href="">terminos de uso</a>
  <br>
@@ -62,5 +62,6 @@
  <br>
  <a href="">centro de ayuda</a>
 </footer>
+<script src="./js/validador.js"></script>
 </body>
 </html>
